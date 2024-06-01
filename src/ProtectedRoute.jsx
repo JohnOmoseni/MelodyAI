@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import Dashboard from "./dashboard/Dashboard.jsx";
-import Signin from "./Pages/auth/Signin.jsx";
+import Signin from "./pages/auth/Signin.jsx";
 import { Navigate, useLocation } from "react-router-dom";
 
 const ProtectedRoute = () => {
