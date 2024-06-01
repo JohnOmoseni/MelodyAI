@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	color: #dedede;
+	font-family: "Poppins", Arial, sans-serif;
+}
+
+html {
+	overflow-x: hidden;
+	height: 100%;
+}
+
+:root {
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	text-size-adjust: none;
+	text-decoration-skip-ink: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	--color-blend-purple: #0bbf59;
+	--color-white: #ffffff;
+	--color-black: #1b1b1f;
+	--color-dark: #bbbbbb;
+	--color-blue: #726cf8;
+	--color-black2: #333333;
+	--color-dark-color: #282828;
+	/* --navHeight: 80; */
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--color-black);
+	color: var(--color-white);
+	overflow: hidden auto;
+	font-family: "Poppins";
+	overflow-x: hidden;
+}
+
+body::selection {
+	background-color: #026a52;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.wrapper :is(a, .icon, button, svg) {
+	cursor: pointer;
+}
+
+.wrapper .icon {
+	display: grid;
+	place-items: center;
+}
+
+.wrapper :where(a, span) {
+	color: inherit;
+	font-size: inherit;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.wrapper :where(input:hover, input:focus, textarea:hover, textarea:focus) {
+	outline: none;
+}
+
+.wrapper :where(img) {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	border-radius: inherit;
+}
+
+.wrapper :where(ul li) {
+	list-style-type: none;
+	display: list-item;
+}
+
+.wrapper :where(select) {
+	border: none;
+	appearance: none;
+	background: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: pointer;
+}
+
+.wrapper :where(button) {
+	display: inline-block;
+}
+.wrapper .full {
+	width: 100vw;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+.rfm-initial-child-container,
+.rfm-marquee {
+	gap: 10em;
+}
+
+.rfm-marquee:last-of-type {
+	margin-left: 8em;
+}
+
+.rfm-child {
+	width: 200px;
+}
+
+.animated-bg {
+	background: linear-gradient(to right, #280142, #fd1d1d, #fcb045);
+	background-size: 400% 400%;
+	animation: animate-bg 10s infinite ease-in-out;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 100%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: purple;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #e975a8;
+	border-radius: 1rem;
+}
+
+@keyframes animate-bg {
+	0% {
+		background-position: 0 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0 50%;
+	}
+}
