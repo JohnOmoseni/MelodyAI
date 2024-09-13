@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["src/*"],
+			"@components/*": ["src/components/*"],
+			"@lib/*": ["src/lib/*"],
+			"@assets/*": ["src/assets/*"],
+			"@redux/*": ["src/redux/*"],
+			"@constants/*": ["src/constants/*"],
+			"@schema/*": ["src/schema/*"],
+			"@data/*": ["src/dashboard/data/*"],
+			"@chatbot/*": ["src/chatbot/*"]
+		}
+	},
+	"include": ["src/**/*"]
+}

@@ -113,7 +113,7 @@ function Register() {
 			<div className="w-full overflow-y-auto pt-3">
 				<Top />
 
-				<div className="w-full max-w-[800px] mx-auto mt-12 flex-column">
+				<div className="w-full max-w-[800px] mx-auto my-12 flex-column">
 					<form
 						onSubmit={handleSubmit}
 						className="relative flex-1 mx-auto w-[90%] flex-column gap-4 md:gap-6 rounded-sm"
@@ -198,7 +198,7 @@ function Register() {
 							className="bg-grad-200 font-kinn w-[80%] flex-row mx-auto mt-12 hover:bg-grad-100 hover:scale-[1.02]"
 						/>
 					</form>
-					<div className="w-[80%] mx-auto mt-8 flex-row gap-3 mb-3">
+					{/* <div className="w-[80%] mx-auto mt-8 flex-row gap-3 mb-3">
 						<hr className="w-[50%] shadow-sm border border-solid border-br-light bg-br-light " />
 						<span className="text-base font-kinn font-extrabold text-shadow">
 							Or
@@ -210,7 +210,7 @@ function Register() {
 							<FcGoogle className="h-5 w-5" />
 							Continue with Google
 						</button>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</section>

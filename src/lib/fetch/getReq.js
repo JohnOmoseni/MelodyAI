@@ -1,5 +1,5 @@
 // GET Requests
-const BASE_URL = "https://melody-ai.up.railway.app";
+const BASE_URL = "https://fortunate-leslie-melody-ai-62ece1e9.koyeb.app";
 
 // Projects
 export async function getAllProjects(token, { signal }) {
@@ -90,7 +90,7 @@ export const HttpCaller = async (
 	headers,
 	isJSON
 ) => {
-	const res = await fetch(`https://melody-ai.up.railway.app/${route}`, {
+	const res = await fetch(`${BASE_URL}/${route}`, {
 		method: method,
 		body:
 			typeof body === "string" ? body : isJSON ? JSON.stringify(body) : body,
@@ -112,7 +112,7 @@ export const runFetchData = async (route, body, headers, abortFetch) => {
 	const controller = new AbortController();
 	const signal = controller.signal;
 
-	const res = await fetch(`https://melody-ai.up.railway.app/${route}`, {
+	const res = await fetch(`${BASE_URL}/${route}`, {
 		method: "POST",
 		body: body,
 		headers: headers,

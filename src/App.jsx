@@ -29,6 +29,9 @@ function App() {
 			<div className="wrapper">
 				<Routes>
 					<Route element={<MainLayout />}>
+						<Route path="/" element={<Home />} />
+						<Route path="*" element={<Home />} />
+
 						<Route path="/about" element={<About />} />
 						<Route path="/contact" element={<Contact />} />
 					</Route>
@@ -58,13 +61,11 @@ function App() {
 					</Route>
 
 					<Route path="/dashboard/*" element={<ProtectedRoute />} />
-					{/* <Route path="/dashboard/*" element={<Dashboard />} /> */}
 					<Route path="/chatbot" element={<ChatBot />} />
-
-					<Route path="*" element={<Home />} />
+					{/* <Route path="/dashboard/*" element={<Dashboard />} /> */}
 				</Routes>
 			</div>
-			<ReactQueryDevtools initialIsOpen="false" />d
+			<ReactQueryDevtools initialIsOpen="false" />
 		</>
 	);
 }

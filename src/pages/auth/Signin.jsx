@@ -1,6 +1,5 @@
 import { useFormik } from "formik";
 import { useNavigate } from "react-router-dom";
-import { FcGoogle } from "react-icons/fc";
 import { AiOutlineMail } from "react-icons/ai";
 import { signInSchema } from "@schema/validate";
 import FormGroup from "./FormInput";
@@ -106,7 +105,7 @@ function SignIn() {
 			<div className="w-full flex-1 overflow-y-auto pt-3">
 				<Top />
 
-				<div className="w-full max-w-[800px] mx-auto mt-12 flex-column">
+				<div className="w-full max-w-[800px] mx-auto my-12 flex-column">
 					<form
 						onSubmit={handleSubmit}
 						className="relative flex-1 mx-auto w-[90%] flex-column gap-4 md:gap-6 rounded-sm"
@@ -144,19 +143,6 @@ function SignIn() {
 							className="bg-grad-200 font-kinn w-[80%] flex-row mx-auto mt-12 hover:bg-grad-100 hover:scale-[1.02]"
 						/>
 					</form>
-					<div className="w-[80%] mx-auto mt-8 flex-row gap-3 mb-3">
-						<hr className="w-[50%] shadow-sm border border-solid border-br-light bg-br-light " />
-						<span className="text-base font-kinn font-extrabold text-shadow">
-							Or
-						</span>
-						<hr className="w-[50%] shadow-sm border border-solid border-br-light bg-br-light" />
-					</div>
-					<div className="mx-auto w-full mb-4">
-						<button className="w-[80%] sm:w-[60%] mx-auto my-4 py-2 px-3 flex-row gap-3 border border-solid border-br-light rounded-md shadow-sm leading-4 text-regular">
-							<FcGoogle className="h-5 w-5" />
-							Continue with Google
-						</button>
-					</div>
 				</div>
 			</div>
 		</section>
