@@ -1,5 +1,5 @@
 // POST Requests
-const BASE_URL = "https://melody-ai.up.railway.app";
+const BASE_URL = "https://fortunate-leslie-melody-ai-62ece1e9.koyeb.app";
 
 // Auth
 export async function register(body) {
